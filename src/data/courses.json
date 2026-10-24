@@ -1,15 +1,73 @@
 {
     "external": [
+        "ANTHROP 2200",
+        "BIOLOGY 1113",
+        "BIOLOGY 1114",
+        "CHEM 1210",
+        "CHEM 1250",
+        "CSE 2111",
+        "CSE 2122",
+        "CSE 2123",
+        "CSE 2124",
+        "CSE 2451",
+        "CSE 3430",
+        "CSE 5231",
+        "CSE 5241",
+        "CSE 5331",
+        "CSE 5521",
+        "CSE 5541",
+        "EARTHSC 1121",
+        "EARTHSC 1122",
+        "ECE 2560",
+        "ENR 2100",
+        "ENR 3000",
+        "ENR 3001",
+        "ENGR 1186",
+        "ENGR 1187",
+        "ENGR 1188",
+        "ENGR 1221",
+        "ENGR 1281.01H",
+        "ENGR 1281.02H",
+        "ENGR 1281.03H",
+        "ENGR 1282.01H",
+        "ENGR 1282.02H",
+        "ENGR 1282.03H",
+        "ENGR 1282.04H",
+        "FDSCTE 2200",
+        "GENED 2601",
+        "HCS 2201",
+        "HCS 2202",
+        "MATH 1140",
+        "MATH 1141",
+        "MATH 1154",
+        "MATH 1156",
         "MATH 1161.01",
         "MATH 1161.02",
         "MATH 1181H",
-        "ENGR 1281.01H",
-        "ENGR 1281.02H",
-        "CSE 3430",
-        "CSE 2451",
-        "ECE 2560",
-        "MATH 1156",
-        "ENGR 1221"
+        "MATH 1534",
+        "MATH 1544",
+        "MATH 2153",
+        "MATH 2162",
+        "MATH 2174",
+        "MATH 2182H",
+        "MATH 2255",
+        "MATH 2366",
+        "MATH 2415",
+        "MATH 4181H",
+        "MATH 4182H",
+        "MATH 4530",
+        "MATH 4568",
+        "MATH 5520H",
+        "MATH 5530H",
+        "PHILOS 1338",
+        "PHYSICS 1251",
+        "PHYSICS 1260",
+        "STAT 3201",
+        "STAT 3450",
+        "STAT 3460",
+        "STAT 4201",
+        "STAT 5301",
+        "GE-WRITING"
     ],
     "courses": [
         {
@@ -112,6 +170,62 @@
             }
         },
         {
+            "id": "CSE 2501",
+            "title": "Social, Ethical, and Professional Issues in Computing",
+            "credits": 1,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 2122",
+                            "CSE 2231"
+                        ]
+                    },
+                    "GE-WRITING"
+                ]
+            }
+        },
+        {
+            "id": "CSE 3231",
+            "title": "Software Engineering Techniques",
+            "credits": 3,
+            "prereqs": {
+                "any": [
+                    "CSE 3901",
+                    "CSE 3902",
+                    "CSE 3903"
+                ]
+            }
+        },
+        {
+            "id": "CSE 3241",
+            "title": "Introduction to Database Systems",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 2122",
+                            "CSE 2123",
+                            "CSE 2124",
+                            "CSE 2231"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2321",
+                            {
+                                "all": [
+                                    "CSE 2111",
+                                    "MATH 2366"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "id": "CSE 3341",
             "title": "Principles of Programming Languages",
             "credits": 3,
@@ -130,13 +244,92 @@
             }
         },
         {
-            "id": "CSE 2501",
-            "title": "Social, Ethical, and Professional Issues in Computing",
-            "credits": 1,
+            "id": "CSE 3421",
+            "title": "Introduction to Computer Architecture",
+            "credits": 3,
             "prereqs": {
                 "all": [
                     "CSE 2231",
-                    "CSE 2321"
+                    {
+                        "any": [
+                            "CSE 2421",
+                            "ECE 2560"
+                        ]
+                    },
+                    "ECE 2060"
+                ]
+            }
+        },
+        {
+            "id": "CSE 3461",
+            "title": "Computer Networking and Internet Technologies",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 2421",
+                            "CSE 3430",
+                            {
+                                "all": [
+                                    "CSE 2451",
+                                    "ECE 2560"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2431",
+                            "CSE 3430"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 3521",
+            "title": "Survey of Artificial Intelligence I: Basic Techniques",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 2331",
+                            "CSE 5331"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "MATH 2174",
+                            "MATH 2568",
+                            "MATH 4568",
+                            "MATH 5520H"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "STAT 3201",
+                            "STAT 3450",
+                            "STAT 3460",
+                            "STAT 3470",
+                            "STAT 4201",
+                            "MATH 4530",
+                            "MATH 5530H"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 3541",
+            "title": "Computer Game and Animation Techniques",
+            "credits": 3,
+            "prereqs": {
+                "any": [
+                    "CSE 3901",
+                    "CSE 3902",
+                    "CSE 3903"
                 ]
             }
         },
@@ -210,6 +403,242 @@
             }
         },
         {
+            "id": "CSE 5911",
+            "title": "Capstone Design: Software Applications",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 3231",
+                            "CSE 5231"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2501",
+                            "PHILOS 1338",
+                            "PHILOS 2338"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 3901",
+                            "CSE 3902",
+                            "CSE 3903"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "GENED 1201",
+                            "GENED 2601"
+                        ]
+                    },
+                    "GE-WRITING"
+                ]
+            }
+        },
+        {
+            "id": "CSE 5912",
+            "title": "Capstone Design: Game Design and Development",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 3541",
+                            "CSE 5541"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2501",
+                            "PHILOS 1338",
+                            "PHILOS 2338"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 3901",
+                            "CSE 3902",
+                            "CSE 3903"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "GENED 1201",
+                            "GENED 2601"
+                        ]
+                    },
+                    "GE-WRITING"
+                ]
+            }
+        },
+        {
+            "id": "CSE 5914",
+            "title": "Capstone Design: Knowledge-Based Systems",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 3521",
+                            "CSE 5521"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2501",
+                            "PHILOS 1338",
+                            "PHILOS 2338"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 3901",
+                            "CSE 3902",
+                            "CSE 3903"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "GENED 1201",
+                            "GENED 2601"
+                        ]
+                    },
+                    "GE-WRITING"
+                ]
+            }
+        },
+        {
+            "id": "CSE 5915",
+            "title": "Capstone Design: Information Systems",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 3241",
+                            "CSE 5241"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 2501",
+                            "PHILOS 1338",
+                            "PHILOS 2338"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "CSE 3901",
+                            "CSE 3902",
+                            "CSE 3903"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "GENED 1201",
+                            "GENED 2601"
+                        ]
+                    },
+                    "GE-WRITING"
+                ]
+            }
+        },
+        {
+            "id": "ECE 2060",
+            "title": "Introduction to Digital Logic",
+            "credits": 3,
+            "prereqs": {
+                "any": [
+                    "MATH 1148",
+                    "MATH 1151"
+                ]
+            }
+        },
+        {
+            "id": "ECE 2360",
+            "title": "Electronics for CSE majors",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "ENGR 1182",
+                            "ENGR 1282.01H",
+                            "ENGR 1282.02H",
+                            "ENGR 1282.03H",
+                            "ENGR 1282.04H",
+                            {
+                                "all": [
+                                    "ENGR 1186",
+                                    "ENGR 1187",
+                                    "ENGR 1188"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "any": [
+                            "MATH 1152",
+                            "MATH 1161.01",
+                            "MATH 1161.02",
+                            "MATH 1172",
+                            "MATH 1181H"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "PHYSICS 1250",
+                            "PHYSICS 1260"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ENGR 1181",
+            "title": "Fundamentals of Engineering I",
+            "credits": 2,
+            "prereqs": {
+                "any": [
+                    "MATH 1140",
+                    "MATH 1141",
+                    "MATH 1150"
+                ]
+            }
+        },
+        {
+            "id": "ENGR 1182",
+            "title": "Fundamentals of Engineering II",
+            "credits": 2,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "ENGR 1181",
+                            "ENGR 1281.01H",
+                            "ENGR 1281.02H",
+                            "ENGR 1281.03H"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "MATH 1141",
+                            "MATH 1151"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "GENED 1201",
+            "title": "GE Launch Seminar",
+            "credits": 1,
+            "prereqs": null
+        },
+        {
             "id": "MATH 1148",
             "title": "College Algebra",
             "credits": 4,
@@ -259,13 +688,79 @@
         {
             "id": "MATH 1172",
             "title": "Engineering Mathematics A",
-            "credits": "5",
+            "credits": 5,
             "prereqs": {
                 "any": [
                     "MATH 1151",
                     "MATH 1156",
                     "MATH 1161.01",
                     "MATH 1161.02"
+                ]
+            }
+        },
+        {
+            "id": "MATH 2568",
+            "title": "Linear Algebra",
+            "credits": 3,
+            "prereqs": {
+                "any": [
+                    "MATH 1172",
+                    "MATH 1544",
+                    "MATH 2153",
+                    "MATH 2162",
+                    "MATH 2182H",
+                    "MATH 4182H",
+                    {
+                        "all": [
+                            "MATH 1152",
+                            "CSE 2321"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "MATH 3345",
+            "title": "Foundations of Higher Mathematics",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    "CSE 2321",
+                    {
+                        "any": [
+                            "MATH 1161.01",
+                            "MATH 1161.02",
+                            "MATH 1172",
+                            "MATH 1181H",
+                            "MATH 1534",
+                            "MATH 1544",
+                            "MATH 1152",
+                            "MATH 4181H"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "PHILOS 2338",
+            "title": "Computing Ethics for a Just and Diverse World",
+            "credits": 4,
+            "prereqs": null
+        },
+        {
+            "id": "PHYSICS 1250",
+            "title": "Mechanics, Work and Energy, Thermal Physics",
+            "credits": 5,
+            "prereqs": {
+                "any": [
+                    "MATH 1141",
+                    "MATH 1151",
+                    "MATH 1154",
+                    "MATH 1156",
+                    "MATH 1161.01",
+                    "MATH 1161.02",
+                    "MATH 1181H",
+                    "MATH 4181H"
                 ]
             }
         },
@@ -282,6 +777,128 @@
                     "MATH 1181H"
                 ]
             }
+        }
+    ],
+    "groups": [
+        {
+            "id": "cse-core",
+            "name": "CSE Core",
+            "rule": "all",
+            "courses": [
+                "CSE 2221",
+                "CSE 2231",
+                "CSE 2321",
+                "CSE 2331",
+                "CSE 2421",
+                "CSE 2431",
+                "CSE 3341"
+            ]
+        },
+        {
+            "id": "ethics",
+            "name": "Computing Ethics",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 2501",
+                "PHILOS 2338"
+            ]
+        },
+        {
+            "id": "software-or-database",
+            "name": "Software Engineering or Databases",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 3231",
+                "CSE 3241"
+            ]
+        },
+        {
+            "id": "architecture-or-networking",
+            "name": "Architecture or Networking",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 3421",
+                "CSE 3461"
+            ]
+        },
+        {
+            "id": "ai-or-games",
+            "name": "AI or Game Development",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 3521",
+                "CSE 3541"
+            ]
+        },
+        {
+            "id": "project",
+            "name": "Project",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 3901",
+                "CSE 3902",
+                "CSE 3903"
+            ]
+        },
+        {
+            "id": "capstone",
+            "name": "Capstone",
+            "rule": "pick",
+            "count": 1,
+            "courses": [
+                "CSE 5911",
+                "CSE 5912",
+                "CSE 5914",
+                "CSE 5915"
+            ]
+        },
+        {
+            "id": "non-cse-core",
+            "name": "Non-CSE Core",
+            "rule": "all",
+            "courses": [
+                "ECE 2060",
+                "ECE 2360",
+                "MATH 2568",
+                "MATH 3345",
+                "STAT 3470"
+            ]
+        },
+        {
+            "id": "math-sci-electives",
+            "name": "Math and Science Electives",
+            "rule": "credits",
+            "credits": 8,
+            "courses": [
+                "MATH 2153",
+                "MATH 2255",
+                "MATH 2415",
+                "STAT 4201",
+                "STAT 5301",
+                "ANTHROP 2200",
+                "BIOLOGY 1113",
+                "BIOLOGY 1114",
+                "CHEM 1210",
+                "CHEM 1250",
+                "EARTHSC 1121",
+                "EARTHSC 1122",
+                "ENR 2100",
+                {
+                    "all": [
+                        "ENR 3000",
+                        "ENR 3001"
+                    ]
+                },
+                "FDSCTE 2200",
+                "HCS 2201",
+                "HCS 2202",
+                "PHYSICS 1251"
+            ]
         }
     ]
 }

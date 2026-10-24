@@ -11,7 +11,8 @@
         "preview": "vite preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist",
-        "check:data": "tsx scripts/check-courses.ts"
+        "check:data": "tsx scripts/check-courses.ts",
+        "test": "vitest"
     },
     "dependencies": {
         "react": "^19.3.1",
@@ -31,6 +32,7 @@
         "tsx": "^4.23.15",
         "typescript": "~6.0.3",
         "typescript-eslint": "^8.71.2",
-        "vite": "^8.3.4"
+        "vite": "^8.3.4",
+        "vitest": "^5.0.5"
     }
 }
