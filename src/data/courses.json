@@ -1,0 +1,287 @@
+{
+    "external": [
+        "MATH 1161.01",
+        "MATH 1161.02",
+        "MATH 1181H",
+        "ENGR 1281.01H",
+        "ENGR 1281.02H",
+        "CSE 3430",
+        "CSE 2451",
+        "ECE 2560",
+        "MATH 1156",
+        "ENGR 1221"
+    ],
+    "courses": [
+        {
+            "id": "CSE 1222",
+            "title": "Introduction to Computer Programming in C++",
+            "credits": 3,
+            "prereqs": null
+        },
+        {
+            "id": "CSE 1223",
+            "title": "Introduction to Computer Programming in Java",
+            "credits": 3,
+            "prereqs": null
+        },
+        {
+            "id": "CSE 1224",
+            "title": "Introduction to Computer Programming in Python",
+            "credits": 3,
+            "prereqs": null
+        },
+        {
+            "id": "CSE 2221",
+            "title": "Software I: Software Components",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    {
+                        "any": [
+                            "CSE 1222",
+                            "CSE 1223",
+                            "CSE 1224",
+                            "ENGR 1221",
+                            "ENGR 1281.01H",
+                            "ENGR 1281.02H"
+                        ]
+                    },
+                    {
+                        "any": [
+                            "MATH 1151",
+                            "MATH 1161.01",
+                            "MATH 1161.02"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 2231",
+            "title": "Software II: Software Development and Design",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    "CSE 2221",
+                    "MATH 1151"
+                ]
+            }
+        },
+        {
+            "id": "CSE 2321",
+            "title": "Foundations I: Discrete Structures",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    "CSE 2221",
+                    "MATH 1151"
+                ]
+            }
+        },
+        {
+            "id": "CSE 2331",
+            "title": "Foundations II: Data Structures and Algorithms",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321",
+                    "STAT 3470"
+                ]
+            }
+        },
+        {
+            "id": "CSE 2421",
+            "title": "Systems I: Introduction to Low-Level Programming",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321"
+                ]
+            }
+        },
+        {
+            "id": "CSE 2431",
+            "title": "Systems II: Introduction to Operating Systems",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    "CSE 2421"
+                ]
+            }
+        },
+        {
+            "id": "CSE 3341",
+            "title": "Principles of Programming Languages",
+            "credits": 3,
+            "prereqs": {
+                "all": [
+                    "CSE 2331",
+                    "CSE 2421",
+                    {
+                        "any": [
+                            "CSE 3901",
+                            "CSE 3902",
+                            "CSE 3903"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 2501",
+            "title": "Social, Ethical, and Professional Issues in Computing",
+            "credits": 1,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321"
+                ]
+            }
+        },
+        {
+            "id": "CSE 3901",
+            "title": "Project: Design, Development, and Documentation of Web Applications",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321",
+                    {
+                        "any": [
+                            "CSE 2421",
+                            "CSE 3430",
+                            {
+                                "all": [
+                                    "CSE 2451",
+                                    "ECE 2560"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 3902",
+            "title": "Project: Design, Development, and Documentation of Interactive Systems",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321",
+                    {
+                        "any": [
+                            "CSE 2421",
+                            "CSE 3430",
+                            {
+                                "all": [
+                                    "CSE 2451",
+                                    "ECE 2560"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSE 3903",
+            "title": "Project: Design, Development, and Documentation of System Software",
+            "credits": 4,
+            "prereqs": {
+                "all": [
+                    "CSE 2231",
+                    "CSE 2321",
+                    {
+                        "any": [
+                            "CSE 2421",
+                            "CSE 3430",
+                            {
+                                "all": [
+                                    "CSE 2451",
+                                    "ECE 2560"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "MATH 1148",
+            "title": "College Algebra",
+            "credits": 4,
+            "prereqs": null
+        },
+        {
+            "id": "MATH 1149",
+            "title": "Trigonometry",
+            "credits": 3,
+            "prereqs": null
+        },
+        {
+            "id": "MATH 1150",
+            "title": "Precalculus",
+            "credits": 5,
+            "prereqs": null
+        },
+        {
+            "id": "MATH 1151",
+            "title": "Calculus I",
+            "credits": 5,
+            "prereqs": {
+                "any": [
+                    "MATH 1150",
+                    {
+                        "all": [
+                            "MATH 1148",
+                            "MATH 1149"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "MATH 1152",
+            "title": "Calculus II",
+            "credits": 5,
+            "prereqs": {
+                "any": [
+                    "MATH 1151",
+                    "MATH 1156",
+                    "MATH 1161.01",
+                    "MATH 1161.02"
+                ]
+            }
+        },
+        {
+            "id": "MATH 1172",
+            "title": "Engineering Mathematics A",
+            "credits": "5",
+            "prereqs": {
+                "any": [
+                    "MATH 1151",
+                    "MATH 1156",
+                    "MATH 1161.01",
+                    "MATH 1161.02"
+                ]
+            }
+        },
+        {
+            "id": "STAT 3470",
+            "title": "Introduction to Probability and Statistics for Engineers",
+            "credits": 3,
+            "prereqs": {
+                "any": [
+                    "MATH 1152",
+                    "MATH 1161.01",
+                    "MATH 1161.02",
+                    "MATH 1172",
+                    "MATH 1181H"
+                ]
+            }
+        }
+    ]
+}

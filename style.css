@@ -1,0 +1,207 @@
+/* ==========================================================
+   CSE Degree Visualizer — basic base styles
+   Classless: styles plain HTML elements, so no markup changes
+   are needed. Link it in <head>:
+   <link rel="stylesheet" href="style.css">
+   ========================================================== */
+
+/* ---------- Colors (edit these to retheme) ---------- */
+:root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --text: #1f2328;
+    --muted: #5f6670;
+    --border: #e1e4e8;
+    --accent: #ba0c2f;
+    /* OSU scarlet */
+    --accent-hover: #8f0a25;
+    --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #16181b;
+        --surface: #1f2226;
+        --text: #e6e8eb;
+        --muted: #9aa1a9;
+        --border: #33373d;
+        --accent: #ff5a72;
+        --accent-hover: #ff8396;
+    }
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ---------- Text ---------- */
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+    margin: 2rem 0 0.75rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p,
+ul,
+ol {
+    margin: 0 0 1rem;
+}
+
+small,
+.muted {
+    color: var(--muted);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+}
+
+/* ---------- Layout pieces ---------- */
+header {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Forms & buttons ---------- */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 8rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+    font: inherit;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1.1rem;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: var(--accent-hover);
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: var(--surface);
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    font-weight: 600;
+}
