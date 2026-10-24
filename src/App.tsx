@@ -1,4 +1,4 @@
-import courseData from "./data/courses.json"
+import courseData from "./data/courses.json" with { type: "json" };
 
 function App() {
     const courses = courseData.courses;
@@ -10,6 +10,7 @@ function App() {
 
             <ul>
                 {courses.map((course) => (
+
                     <li key={course.id}>
                         <strong>{course.id}</strong>: {course.title} ({course.credits} credits)
                     </li>
